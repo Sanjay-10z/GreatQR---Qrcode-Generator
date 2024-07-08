@@ -1,6 +1,6 @@
 import React from 'react';
 import "./index.css";
-import QRcode from './assets/QRcode.jpg'; 
+import QRcode from './assets/QRcode.jpg';
 import { useState } from 'react';
 
 const Qrcode = () => {
@@ -52,7 +52,7 @@ const Qrcode = () => {
                     <button className='download-btn' onClick={downloadQR}>Download</button>
                 </div>
                 <div className='footer'>
-                    <p>Designed By <span className='footer-span'>Sanjay</span> </p>
+                    <p>Designed By<span className='footer-span'> StarrySanjay ⚝</span> </p>
                 </div>
             </div>
         </div>

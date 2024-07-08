@@ -2,116 +2,182 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Roboto",sanserif;
+    font-family: "Roboto", sans-serif;
     background-color: rgba(0, 0, 0, 0.993);
-    
 }
 
-.Qrcode{
+.Qrcode {
     width: 200px;
     height: 200px;
-    
 }
-.header{
+
+.header {
     height: 100px;
     width: 100%;
 }
 
 .header h1 {
     background-color: #27ae68;
-    padding:16px;
+    padding: 16px;
     padding-left: 30px;
-    color:#fff;
-    margin-top:0;
-}
-.header h1 span{
-    background-color: #27ae68;
-    font-weight: 400px;
-    
-}
-.app-container{
-    width:100%;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    color: #fff;
+    margin-top: 0;
 }
 
-.inner-box{
+.header h1 span {
+    background-color: #27ae68;
+    font-weight: 400;
+}
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-box {
     margin-left: 100px;
 }
 
-.app-container h1{
-    font-weight:600;
+.app-container h1 {
+    font-weight: 600;
     font-size: 18px;
-    color:#27ae68;
+    color: #27ae68;
 }
-.Qrcode{
+
+.Qrcode {
     padding: 5px;
 }
 
-.input-label{
-    display:block;
-    padding:12px;
+.input-label {
+    display: block;
+    padding: 12px;
     margin-bottom: 8px;
-    color:#27ae68;
-    font-size:15px;
-    font-weight:500;
+    color: #27ae68;
+    font-size: 15px;
+    font-weight: 500;
 }
 
-input[type="text"]{
-    padding:14px;
+input[type="text"] {
+    padding: 14px;
     margin-bottom: 20px;
-    width:80%;
+    width: 80%;
     border: 2px solid #27ae68;
     border-radius: 20px;
-    color:#fff; 
-     
+    color: #fff;
 }
 
-button{
+button {
     padding: 12px 20px;
-    font-size:18px;
-    color:#fff;
-    border:none;
+    font-size: 18px;
+    color: #fff;
+    border: none;
     border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
-    
 }
 
-.generate-btn{
+.generate-btn {
     background-color: #27ae68;
-    margin-left: 30px;
+    margin-left: 77px;
 }
 
-.generate-btn:disabled{
-   background-color: #bdc3c7;
-   cursor:not-allowed;
+.generate-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
 }
 
-.download-btn{
+.download-btn {
     background-color: #27ae68;
-    margin-left:20px;
+    margin-left: 20px;
 }
 
-.download-btn:hover{
+.download-btn:hover {
     background-color: #09964d;
 }
 
-.footer{
+.footer {
     margin-top: 20px;
 }
-.footer p{
-   text-decoration: none; 
-   color:#fff;
+
+.footer p {
+    text-decoration: none;
+    color: #fff;
 }
 
-.footer-span{
-    color:#27ae68;
-    font-weight: 300px;
+.footer-span {
+    color: #27ae68;
+    font-weight: 300;
     font-size: 18px;
 }
- 
+
+
+@media screen and (max-width: 767px) {
+    .inner-box {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    input[type="text"] {
+        width: 80vw;
+    }
+
+    input-label {
+        display: block;
+        padding: 12px;
+        margin-bottom: 8px;
+        color: #27ae68;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 18px;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+    }
+
+    .download-btn {
+        background-color: #27ae68;
+        margin-left: 0;
+        width: 60vw;
+        margin-left: 9vw;
+    }
+
+    .generate-btn {
+        background-color: #27ae68;
+        width: 60vw;
+        margin-left: 9vw;
+
+    }
+
+    .generate-btn:disabled {
+        background-color: #bdc3c7;
+        cursor: not-allowed;
+    }
+
+    .download-btn:hover {
+        background-color: #09964d;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .app-container {
+        padding: 20px;
+
+    }
+}

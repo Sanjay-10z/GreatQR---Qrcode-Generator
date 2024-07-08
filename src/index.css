@@ -152,15 +152,11 @@ button {
     .download-btn {
         background-color: #27ae68;
         margin-left: 0;
-        width: 60vw;
-        margin-left: 9vw;
     }
 
     .generate-btn {
         background-color: #27ae68;
-        width: 60vw;
-        margin-left: 9vw;
-
+        margin-left: 0;
     }
 
     .generate-btn:disabled {
